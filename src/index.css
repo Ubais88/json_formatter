@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light mode (default) */
+.monaco-editor .editor-search-highlight {
+  background-color: rgba(255, 235, 59, 0.3);
+  border: 1px solid rgba(255, 193, 7, 0.4);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255, 193, 7, 0.15);
+}
+
+/* Dark mode */
+.dark .monaco-editor .editor-search-highlight {
+  background-color: rgba(255, 220, 128, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 0 0 1px rgba(255, 193, 7, 0.15);
+}
+
+/* Light mode - current match */
+.monaco-editor .editor-search-highlight-current {
+  background-color: rgba(255, 193, 7, 0.5);
+  border: 2px solid rgba(255, 152, 0, 0.8);
+  border-radius: 4px;
+  box-shadow: 0 0 3px 1px rgba(255, 193, 7, 0.25);
+}
+
+/* Dark mode - current match */
+.dark .monaco-editor .editor-search-highlight-current {
+  background-color: rgba(255, 193, 7, 0.35);
+  border: 2px solid rgba(255, 160, 0, 0.7);
+  border-radius: 4px;
+  box-shadow: 0 0 4px 1px rgba(255, 193, 7, 0.2);
+}
